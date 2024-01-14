@@ -1,0 +1,20 @@
+@import "./../../main-content/landing-page/mixin.scss";
+
+footer{
+    background-color: black;
+    padding: $default-font-size;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+        
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: $default-font-size*1.3;
+            &:hover{
+                color: red;
+            }
+        }
+}

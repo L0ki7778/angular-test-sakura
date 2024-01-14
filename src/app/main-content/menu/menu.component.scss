@@ -1,0 +1,60 @@
+@import "./../landing-page/mixin.scss";
+
+
+section {
+    @include defaultFlex();
+    flex-direction: column;
+    height: 90vh;
+    padding: $x2;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./../../../assets/img/section_our_menu_bg.jpg");
+
+    h2 {
+        @include secondaryH2();
+    }
+
+    #soup-box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap:$x2;
+
+        .soup-container {
+            display: flex;
+            justify-content: space-evenly;
+
+            .soup {
+                @include size(200px);
+            }
+
+                table{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    tbody{
+                        tr{
+                            th{
+                                font-weight: bold;
+                                font-size: $x2;
+                                padding-bottom: 12px;
+                            }
+                        }
+                        tr{
+                            td{
+                                color: rgba(0, 0, 0, 0.7);
+                                font-weight: bold;
+                                font-size: $default-font-size;
+                            }
+                        }
+                    }
+                }
+        }
+
+        .soup-container:nth-child(2) {
+            flex-direction: row-reverse!important;
+        }
+    
+    }
+
+}

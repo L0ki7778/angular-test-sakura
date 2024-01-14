@@ -1,0 +1,36 @@
+@import "./../landing-page/mixin.scss";
+
+section {
+    @include defaultFlex();
+    flex-direction: column;
+    height: 60vh;
+    padding: $x2;
+    align-items: center;
+    justify-content: space-evenly;
+        #find-us-headline {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+                h2 {
+                    @include secondaryH2();
+                    padding:8px!important;
+                };
+                #find-us-adress{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                        img{
+                            @include size($x15);
+                        };
+                        #adress{
+                            font-size: $x15
+                        }
+                };
+        };
+        iframe{
+            padding: $x2;
+            width: 100%;
+            height: 60%;
+        }
+}

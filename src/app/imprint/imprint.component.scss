@@ -1,0 +1,18 @@
+@import "../main-content/landing-page/mixin.scss";
+
+#imprint{
+    height: calc(85vh - $x2);
+    padding: $x2;
+
+        h1{
+            padding: $x2 0;
+        }
+
+        h2{
+            padding: $default-font-size 0;
+        }
+
+        h3{
+            padding: calc($default-font-size / 2) 0;
+        }
+}

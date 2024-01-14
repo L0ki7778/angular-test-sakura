@@ -1,0 +1,79 @@
+@import "./../mixin.scss";
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 20px;
+    width: calc(100% - 64px);
+    padding: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+        @include size(80px);
+    }
+
+    div {
+        a {
+            &:hover {
+                color: red
+            }
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+    color: white
+}
+
+#nav-links {
+    width: fit-content;
+    gap: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    #contact {
+        background-color: red;
+        padding: 8px 16px;
+        border-radius: 8px;
+        border: 1px snow;
+        filter: brightness(0.9);
+
+        &:hover {
+            filter: brightness(2);
+            cursor: pointer;
+
+            a {
+                color: snow;
+            }
+        }
+
+        @include defaultFlex();
+
+        a {
+            @include defaultFlex();
+
+            img {
+                @include size(32px);
+            }
+        }
+    }
+}
+
+#language-container {
+    img:first-child {
+        transform: translate(100%, 0);
+    }
+
+    img {
+        @include size(64px);
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

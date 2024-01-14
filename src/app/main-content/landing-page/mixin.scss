@@ -1,0 +1,38 @@
+$default-font-size: 16px;
+$bold-font-size:calc($default-font-size * 1.5);
+
+$x15:calc($default-font-size * 1.5);
+$x2:calc($default-font-size * 2);
+$x25:calc($default-font-size * 2.5);
+$x3:calc($default-font-size * 3);
+$x35:calc($default-font-size * 3.5);
+$x4:calc($default-font-size * 4);
+$x45:calc($default-font-size * 4.5);
+$x5:calc($default-font-size * 5);
+$x55:calc($default-font-size * 5.5);
+
+@mixin secondaryH2() {
+    @include defaultFlex();
+    font-size: $x4;
+    color:#9F0908;
+    padding: $x2;
+}
+
+@mixin size($x) {
+    width: $x;
+    height: $x;
+}
+
+@mixin defaultFlex() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin defaultFontSize() {
+    font-size: $default-font-size;
+}
+
+@mixin boldFontSize() {
+    font-size: $bold-font-size;
+}
